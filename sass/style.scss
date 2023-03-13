@@ -28,10 +28,15 @@ section {
     padding: 120px 0;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
 /* navigation */
 
 .navigation {
-    
+   background-color: inherit; 
 }
 
 .navigation ul {
@@ -56,7 +61,7 @@ section {
     text-decoration: none;
     color: $color-text-one;
     font-size: 1em;
-    color: $color-four;
+    color: $color-text-one;
 }
 
 /* Splash */
@@ -65,12 +70,4 @@ section {
     background-image: url(../images/Background_Image.png);
     background-size: cover;
     min-height: 930px;
-}
-
-.splash h3 {
-    margin-top: 0;
-    position: relative;
-    top: 5vmax;
-    left: 5vmax;
-    color: $color-one;
 }
