@@ -31,6 +31,23 @@ section {
     text-decoration: none;
  }
 
+ h1 {
+    font-size: 48px;
+    margin: 0;
+ }
+
+ h3 {
+    margin: 0 auto 30px;
+    font-style: italic;
+    font-weight: 400;
+    color: $color-two;
+ }
+
+ p {
+    color: $color-two;
+    margin-top: 0;
+ }
+
 /* navigation */
 
 .navigation {
@@ -102,9 +119,13 @@ section {
 }
 
 .splash-inner {
-    position: relative;
+    position: absolute;
+    margin: 5% auto;
     font-size: 36px;
-    top: 38%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: $color-four;
 }
 .splash-inner h1 {
@@ -118,3 +139,27 @@ section {
 
 /* services*/
 
+.services {
+    text-align: center;
+}
+
+
+.flex-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 10px;
+    text-align: center;
+}
+
+.flex-1 i {
+    color: $color-one;
+    font-size: 35px;
+    height: 70px;
+    width: 70px;
+    margin: 0 auto;
+    line-height: 70px;
+    border: 2px solid;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 20px;
+}
