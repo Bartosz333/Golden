@@ -46,7 +46,7 @@ section {
  }
 
  h4 {
-    margin: 8px 0 0 0;
+    margin: 0;
     font-size: 20px;
  }
 
@@ -58,15 +58,16 @@ section {
  }
 
 /* navigation */
-nav .container{
-    position: relative;
-    top: 5vmax;
-}
-.navigation .row{
+.navigation {
     position: absolute;
-    display: flex;
-    flex-direction: row-reverse;
+    width: 100%;
+    top: 50px;
 }
+.nav-1 {
+    display: flex;
+    justify-content: end;
+}
+
 .navigation ul {
     list-style-type: none;
     padding-left: 0;
@@ -74,14 +75,6 @@ nav .container{
 .navigation ul li {
     display: inline;
     padding: 0 30px;
-}
-.nav-1 {
-    position: relative;
-    left: 17vmax;
-}
-.nav-2 {
-    position: relative;
-    right: 5vmax;
 }
 .first a {
     color: $color-four;
@@ -187,12 +180,13 @@ nav .container{
 
 .image {
     margin: 0 auto;
+    font-size: 0;
 }
 
 img {
     width: 100%;
     height: 100%;
-    object-fit: cover;       
+    object-fit: cover;      
 }
 
 .image-text {
@@ -242,4 +236,19 @@ footer .row{
 .social-media i:hover {
     color: $color-one;
     transition: all 1s;
+}
+
+/* Media */
+
+@media ( max-width: 767px) {
+    .nav-1 {
+        display: none;
+    }
+    .splash-inner h1 {
+        font-size: 28px;
+    }
+    .splash-inner h2 {
+        font-size: 20px;
+    }
+
 }
