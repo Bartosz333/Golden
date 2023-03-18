@@ -292,6 +292,9 @@ footer .row{
         color: $color-one;
         font-size: 25px;
         position: fixed;
+        border: solid 2px;
+        border-radius: 5px;
+        padding: 2px 4px;
     }
     .nav-2 .third-nav a {
         font-size: 0px;
