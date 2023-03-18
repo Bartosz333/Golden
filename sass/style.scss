@@ -273,15 +273,22 @@ footer .row{
     p {
         font-size: medium;
     }
+    footer .row {
+        margin: 10px 0;
+    }
     .copyright p {
         font-size: small;
         text-align: center;
+        position: relative;
+        top: 25px;
     }
     .social-media ul li i {
         height: 25px;
         width: 25px;
         line-height: 25px;
         font-size: 15px;
+        position: relative;
+        bottom: 33px;
     }
     .nav-2 .third-nav {
         display: block;
@@ -350,5 +357,5 @@ footer .row{
         width: 28px;
         line-height: 28px;
         font-size: 16px;
-    } 
+    }
 }
